@@ -14,13 +14,23 @@ Add ask-questions to the `plugin` array in your `opencode.json` (global or proje
 }
 ```
 
-Restart OpenCode. The plugin auto-installs and registers the skill.
+Restart OpenCode. The plugin auto-installs from the git repository and registers the skill.
 
 ## Verify
 
 Ask: "What skills do you have available?"
 
 The `ask-questions` skill should be listed.
+
+If it does not appear, check that OpenCode can resolve the repo as a package entry point:
+
+```json
+{
+  "name": "ask-questions",
+  "type": "module",
+  "main": ".opencode/plugins/ask-questions.js"
+}
+```
 
 ## What it does
 

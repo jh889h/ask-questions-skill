@@ -18,7 +18,17 @@ Or manually add to your `opencode.json`:
 }
 ```
 
-Restart OpenCode.
+Restart OpenCode. The plugin auto-installs from the git repository and registers the skill.
+
+If the plugin is not discovered, make sure the repository includes the package entry point OpenCode expects:
+
+```json
+{
+  "name": "ask-questions",
+  "type": "module",
+  "main": ".opencode/plugins/ask-questions.js"
+}
+```
 
 ## What it does
 
@@ -31,6 +41,32 @@ This skill is a mandatory interactive gate for code-affecting work only. It requ
 - Questions before making important assumptions
 - Questions when the task appears complete
 - Never ends without an interactive next-step question
+
+## OpenCode Plugin Tests
+
+There is now a minimal OpenCode plugin test harness in `tests/opencode/`.
+
+Run:
+
+```bash
+tests/opencode/run-tests.sh
+```
+
+On Windows, run:
+
+```powershell
+node tests/opencode/run-tests.mjs
+# or
+powershell -ExecutionPolicy Bypass -File tests/opencode/run-tests.ps1
+```
+
+You can also use:
+
+```bash
+npm run test:opencode
+```
+
+It verifies the package entry point, plugin export, installed skills-path registration, bootstrap injection, and duplicate-injection protection. The shell scripts remain available as a Unix-style install-layout check.
 
 ## License
 

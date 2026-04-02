@@ -1,0 +1,11 @@
+{
+  "name": "ask-questions",
+  "version": "1.0.0",
+  "type": "module",
+  "main": ".opencode/plugins/ask-questions.js",
+  "scripts": {
+    "test:opencode": "node tests/opencode/run-tests.mjs",
+    "test:opencode:bootstrap": "node tests/opencode/test-bootstrap.mjs",
+    "test:opencode:loading": "node tests/opencode/test-plugin-loading.mjs"
+  }
+}
