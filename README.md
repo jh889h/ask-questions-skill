@@ -14,7 +14,7 @@ Or manually add to your `opencode.json`:
 
 ```json
 {
-  "plugin": ["ask-questions@git+ssh://git@git.zzlan.de/share/coding-agent-skills/ask-questions-skill.git"]
+  "plugin": ["ask-questions@git+https://git.zzlan.de/share/coding-agent-skills/ask-questions-skill.git"]
 }
 ```
 

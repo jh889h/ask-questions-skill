@@ -10,7 +10,7 @@ Add ask-questions to the `plugin` array in your `opencode.json` (global or proje
 
 ```json
 {
-  "plugin": ["ask-questions@git+ssh://git@git.zzlan.de/share/coding-agent-skills/ask-questions-skill.git"]
+  "plugin": ["ask-questions@git+https://git.zzlan.de/share/coding-agent-skills/ask-questions-skill.git"]
 }
 ```
 
