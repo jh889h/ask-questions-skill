@@ -1,16 +1,18 @@
 # Installing Ask-Questions Skill for OpenCode
 
+## Prerequisites
+
+- [OpenCode.ai](https://opencode.ai) installed
+
 ## Installation
 
 Add ask-questions to the `plugin` array in your `opencode.json` (global or project-level):
 
 ```json
 {
-  "plugin": ["ask-questions@git+https://github.com/YOUR_USERNAME/ask-questions-skill.git"]
+  "plugin": ["ask-questions@git+ssh://git@git.zzlan.de/share/coding-agent-skills/ask-questions-skill.git"]
 }
 ```
-
-Replace `YOUR_USERNAME` with your GitHub username or the correct repository path.
 
 Restart OpenCode. The plugin auto-installs and registers the skill.
 
@@ -27,4 +29,6 @@ This skill enforces interactive behavior before any code-affecting work:
 - Asks questions when anything is unclear
 - Asks questions before moving from planning to execution
 - Asks questions when multiple options exist
+- Asks questions before making important assumptions
+- Asks questions when the task appears complete
 - Never concludes without a next-step question

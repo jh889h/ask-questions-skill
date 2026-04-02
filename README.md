@@ -4,7 +4,13 @@ A skill that enforces interactive behavior before any code-affecting work.
 
 ## Installation
 
-Add to your `opencode.json`:
+Tell OpenCode:
+
+```
+Fetch and follow instructions from https://git.zzlan.de/share/coding-agent-skills/ask-questions-skill/-/raw/main/.opencode/INSTALL.md
+```
+
+Or manually add to your `opencode.json`:
 
 ```json
 {
