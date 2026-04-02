@@ -7,14 +7,14 @@ A skill that enforces interactive behavior before any code-affecting work.
 Tell OpenCode:
 
 ```
-Fetch and follow instructions from https://git.zzlan.de/share/coding-agent-skills/ask-questions-skill/-/raw/master/.opencode/INSTALL.md?ref_type=heads
+Fetch and follow instructions from https://raw.githubusercontent.com/jh889h/ask-questions-skill/main/.opencode/INSTALL.md
 ```
 
 Or manually add to your `opencode.json`:
 
 ```json
 {
-  "plugin": ["git+https://git.zzlan.de/share/coding-agent-skills/ask-questions-skill.git"]
+  "plugin": ["git+https://github.com/jh889h/ask-questions-skill.git"]
 }
 ```
 
